@@ -1,0 +1,5 @@
+DiskPart
+list disk
+select disk n ##n = number of disk
+attributes disk clear readonly
+clean
