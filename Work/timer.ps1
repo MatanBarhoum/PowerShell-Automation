@@ -1,4 +1,4 @@
-﻿Function Start-CountDownTimer {
+Function Start-CountDownTimer {
     
     Param (
     
@@ -71,9 +71,12 @@
         $TimeDifference = $Timer - (New-TimeSpan -Seconds $i)
 
         Write-Verbose "Time remaining $TimeDifference"
+
+        Write-Verbose "If Java finished the installation, you can close this window."
        
-        Write-Progress -Activity "Time Remaining: $TimeDifference" -Status "Timer Progress $Percentage%" -PercentComplete $Percentage
-        
+        Write-Progress -Activity "Time Remaining: $TimeDifference  
+                                                                                                                                                                                                                                                          If Java finished install, you can close this window." -Status "Timer Progress $Percentage%" -PercentComplete $Percentage
+                                                                   
         Write-Verbose "Incrementing `$i($i) variable"
         $i++
 
