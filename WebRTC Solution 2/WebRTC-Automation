@@ -1,0 +1,11 @@
+$istrue = $True ## כדי שהלולאה תרוץ כל עוד הערך הוא אמת, נגדיר כאמת ולאחר מכן כאשר הערך יתקיים המשתנה יהיה שקר והסקריפט ימשיך לרוץ
+do 
+{
+$FindURL = (New-Object -ComObject Shell.Application).Windows() |Where-Object {($_.Name -like "*explorer*") -and ($_.LocationURL -like "*https://join.*")} ##משתנה שמחפש אחר חלונית דפדפן אקספלורר פתוח ובנוסף הערך שלו יהיה הקישור לועידה
+if ( ($FindURL | Where {$_.LocationURL -like "*https://join*"}).LocationURL -like "*https://join*" ) ##אם ורק אם הקישור יהיה דומה לקישור של הועידה, המשתנה עם ערך האמת יהפוך לשקר, זאת בכדי שהלולאה תמשיך כל עוד הא לא מוצא קישור, כלומר לא פתחו את הועידה
+{
+$ChromeURL = ($FindURL | Where {$_.LocationURL -like "*https://join*"}).LocationURL
+[System.Diagnostics.Process]::Start("Chrome", $ChromeURL)
+$istrue = $False
+} ##מציב למשתנה ערך שקר כדי להפסיק את הלולאה שמחפשת אחר קישור לועידה
+}while($istrue) 
