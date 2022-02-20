@@ -1,3 +1,5 @@
+## WebRTC Project 
+
 WebRTC is a project I was working on the last few days. 
 My company has Internet Explorer 11 as their Default Browser, and they bought application of Real-Time Conference on the web. This Application working on Chrome only and I've been tasked to find solution to the problem: "We don't want to replace Internet Explorer as our Default browser".
 After some time, I created a Macro with VBA which add an button to the Outlook client, and when clicking on this button, it copy the link in the outlook message and open it with chrome. Cyber denied it as this is danger (no really, but still).
