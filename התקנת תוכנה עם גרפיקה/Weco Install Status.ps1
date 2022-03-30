@@ -1,5 +1,5 @@
 ﻿##יבוא CSV
-$CSV = Import-CSV -Path "C:\Users\e209216019\Desktop\WecoProject.csv" 
+$CSV = Import-CSV -Path "C:\Users\xxxxx\Desktop\xxx.csv" 
 $StatusRed = ""
 $Computers = $CSV.ComputerName
 
