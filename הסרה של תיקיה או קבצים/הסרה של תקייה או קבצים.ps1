@@ -1,4 +1,4 @@
-﻿$Computers = Import-CSV -Path "C:\Users\e209216019\Desktop\WecoProject.csv" | Select -ExpandProperty ComputerName
+﻿$Computers = Import-CSV -Path "C:\Users\xxxxx\Desktop\WecoProject.csv" | Select -ExpandProperty ComputerName
 Add-Type -AssemblyName System.Windows.Forms
 $Main_Form = New-Object System.Windows.Forms.Form
 $Main_Form.Width = 700
