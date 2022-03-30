@@ -22,7 +22,7 @@
     if (!$Seconds  -and !$Minutes -and !$Hours) {
         Write-Warning "No parameters were supplied, default is 1 minute"
         $Timer = New-TimeSpan -Minutes 1
-        #Write-Error  -Message "At least one parameter is required" -RecommendedAction "Usage: Start-CountDownTimer -seconds 35" -Category NotSpecified -Exception "Missing one of the following parameters -Seconds, -Minutes, -Hours" -TargetObject "Missing Parameters"
+        
         
     }
     Write-Verbose "Following values were supplied"
