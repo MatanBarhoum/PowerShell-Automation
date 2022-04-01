@@ -12,7 +12,7 @@ $email = $outlook.CreateItem(0)
 $email.To = "למי לשלוח?"
 $email.Subject = "חריגת מקום פנוי בכונן זוהתה"
 $email.Body = "                                                                                                                                                                                                                      לידיעתך, במחשב זה נותרו פחות מ-20 ג'יגה פנויים בכונן"
-
+$email.Attachments.Add("C:\Path\Text.txt")
 $email.Send()
 
 }
