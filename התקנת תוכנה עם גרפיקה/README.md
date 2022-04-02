@@ -1,4 +1,5 @@
-תוכנה עם סט כלים להתקנה של תוכנה ובדיקות כמו גרסת דוט נט, האם ההתקנה בוצעה בהצלחה.
+תוכנה עם סט כלים להתקנה של תוכנה ובדיקות כמו גרסת דוט נט, האם ההתקנה בוצעה בהצלחה
+
 PS-Remote - Uses PSEXEC function in order to Enable PS-Remoting Service on (Win7 Mostly) computers.
 
 Dot Net Version - Uses Get-ChildItem with filter to query HKLM:\ folder where the Dot Net framework is installed. if the Version is less than 4.6.1 (which is thr requirement for this specific program, it is install the program.
