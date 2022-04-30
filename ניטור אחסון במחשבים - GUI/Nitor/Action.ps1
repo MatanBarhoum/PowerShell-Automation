@@ -18,7 +18,7 @@ $Action_RTextBox.Size = [System.Drawing.Point]::new(380,350)
 $Action_RTextBox.Font = [System.Drawing.Font]::new("Arial", 11, [System.Drawing.FontStyle]::Bold)
 $ChooseNitor = $Nitor_ComboBox.SelectedItem
 $TEST123 = Get-ADComputer -Filter * -SearchBase "OU=Computers,OU=$ChooseNitor,DC=gov,DC=il" | Select -ExpandProperty Name
-ForEach ($Computer in $TEST123) {
+ForEach ($Computer in $OU_AliveComputers) {
 $Action_RTextBox.AppendText("$Computer Have less than 20GB free space`n")
 }
 
