@@ -2,6 +2,7 @@
 
 . (Join-Path "C:\Nitor" "Resize.ps1")
 . (Join-Path "C:\Nitor" "Action.ps1")
+. (Join-Path "C:\Nitor" "PopUp.ps1")
 
 $Nitor_Form = New-Object System.Windows.Forms.Form
 $Nitor_Form.Width = 320
@@ -66,4 +67,15 @@ $Nitor_Form.Controls.Add($Nitor_Logo)
 $Result = $Nitor_Form.ShowDialog()
 
 if ($Result -eq [System.Windows.Forms.DialogResult]::OK) {
-if ($Nitor_CheckBox.Checked -eq $true) {resize} }
+if ($Nitor_CheckBox.Checked -eq $true)
+{
+    PopUpResize
+    Action
+}
+else 
+{
+    PopUp
+    Action
+}
+
+ }
