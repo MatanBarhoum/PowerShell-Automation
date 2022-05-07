@@ -1,6 +1,17 @@
 # Process Auto Clicker - תוכנה להשארת המחשב ער
 
 <img src="Example.gif">
+
+"Auto Clicker" By Matan Barhoum has been developed for a simple purpose - not letting the computer get into sleep / lock mode.
+This program simulate the Mouse movement and the keyboard pressing. in the example - a minimum crusor movement is shown and a F5 to refresh a website.
+This program written in hebrew to support the israel community. Later on there will be English version for the friend all around the world. this is a simple - lightweight autoclicker for internal companies and has been uploaded to demonstrite the power of PowerShell and My Power in powershell, as well as integrated Powershell with c#. This program written from C# enviroment and has the .Net all around instead of cmdlet. 
+This is almost a pure C# program without the console, but can be Converted to EXE file which use C# lightweight console. (PS2EXE)
+
+Best regards, Matan Barhoum.
+<br>
+MatanBarhoum@outlook.com
+<br>
+<br>
 תוכנת אוטומציה "Auto Click" פותחה על מנת לתת מענה לאנשים שרוצים להשאיר את המחשב שלהם דולק מבלי שיכנס למצב שינה \ נעילה. התוכנה אינה 100% וזקוקה לשיפורים.<br> התוכנה נועדה בעיקר כדי לתת דוגמה והשראה לאנשים איך לבנות מערכת אוטו קליקר בPowershell. 
 <br>
 התוכנה שואבת את רוב נתוניה בדומה לC# וניתנת לקמפול בעזרת תוכנות דחיסת קבצי הPS1 לקובץ EXE שרץ בסביבת C#. יש לזכור שהתוכנות מתבססות על אותו CLR שהוא הDOT NET.<br>
